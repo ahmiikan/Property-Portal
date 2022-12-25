@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=DM+Serif+Display&family=PT+Serif+Caption&display=swap');
+@import url('blog-post.css');
+
+.my-container {
+  @apply container mx-4 sm:mx-auto lg:px-16;
+}
+
+.section-title {
+  @apply py-6 mb-4 inline-flex flex-col flex-shrink gap-x-2 font-pt-serif-caption;
+}
+
+.section-title h3 {
+  @apply text-3xl mb-2 font-bold;
+}
+
+.section-title span {
+  @apply bg-primary h-1 w-1/3;
+}
+
+.post-tab {
+  @apply w-1/3;
+}
